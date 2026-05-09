@@ -15,7 +15,7 @@ Codebox is a full-stack web platform for managing users and interactive content,
 
 Frontend:
 
-* React
+* EJS + Express (templating engine)
 * Axios
 * Tailwind CSS
 
