@@ -1,0 +1,256 @@
+<section class="cart bg9 p-t-150 p-b-50">
+	<div class="d-block container">
+		<div class="row">
+			<div class="col-12 col-lg-6 bo9 w-size02 p-l-40 p-r-40 p-t-30 p-b-38 bgwhite">
+				<div class="cart-img-product bo9">
+					<img src="img/course/<%= package_picture %>.jpg" alt="">
+				</div>
+				<h5 class="m-text20 p-t-24">
+					Order Summary
+				</h5>
+				<div class="flex-w flex-sb-m p-b-12">
+					<span class="flex-l s-text18 w-size19 w-full-sm">
+						<%= package_name %> :
+					</span>
+					<span class="m-text21 w-size20 w-full-sm">
+						<%= plan_value %> THB
+					</span>
+				</div>
+				<div class="flex-w flex-sb-m p-b-12">
+					<span class="flex-l s-text18 w-size19 w-full-sm">
+						Plan :
+					</span>
+					<span class="m-text21 w-size20 w-full-sm">
+						<%= sub_name %>
+					</span>
+				</div>
+				<!-- <div class="flex-w flex-sb-m p-b-12">
+					<span class="flex-l s-text18 w-size0 w-full-sm">
+						
+					</span>
+				</div>
+				<div class="flex-w bo101 flex-sb-m p-b-12">
+					<span class="flex-l s-text18 w-size19 w-full-sm">
+						Estimated Shipping :
+					</span>
+					<span class="flex-l m-text21 w-size20 w-full-sm">
+						THB xxx
+					</span>
+				</div>
+				<div class="flex-w flex-sb-m p-b-12">
+					<span class="flex-l s-text18 w-size19 w-full-sm">
+						Estimated Tax :
+					</span>
+					<span class="m-text21 w-size20 w-full-sm">
+						THB xxx
+					</span>
+				</div>
+				<div class="flex-w flex-sb-m bo101 p-t-26 p-b-30">
+					<span class="m-text22 w-size19 w-full-sm">
+						Total:
+					</span>
+					<span class="m-text21 w-size20 w-full-sm">
+						THB xxx
+					</span>
+				</div> -->
+			</div>
+
+			<div class="col-12 col-lg-6 bo9 w-size01 p-l-40 p-r-40 p-t-30 p-b-38 bgwhite">
+				<form action="/payment" method="POST" id="frm_payment">
+					<input type="hidden" name="sub_id" value="<%= sub_id %>">
+					<input type="hidden" name="package_id" value="<%= package_id %>">
+					<input type="hidden" name="period" value="<%= sub_name[0] %>">
+					<!-- <div class="cart-img-product bo9">
+						<img src="img/course/codekidsbox.jpg" alt="">
+					</div> -->
+					<div class="flex-w flex-sb-m p-b-15 p-t-24">
+						<span class="s-text18 text-red w-size19 w-full-sm">
+							<span class="text-red">Shipping Address</span>
+						</span>
+					</div>
+					<div class="flex-w w-size0 w-full-sm">
+						<div>
+							<span class="s-text19">
+								First Name
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="firstname" placeholder="Firstname">
+							</div>
+						</div>
+						<div class="p-l-20">
+							<span class="s-text19">
+								Last Name
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="lastname" placeholder="Lastname">
+							</div>
+						</div>
+					</div>
+					<div class="flex-w w-size0 w-full-sm">
+						<span class="s-text19 w-size19 w-full-sm">
+							Email
+						</span>
+					</div>
+					<div class="size01 bo4 m-b-12 bgred">
+						<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="email" placeholder="Email">
+					</div>
+					<div class="flex-w w-size0 w-full-sm">
+						<span class="s-text19 w-size19 w-full-sm">
+							Address
+						</span>
+					</div>
+					<div class="size01 bo4 m-b-12 bgred">
+						<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="address" placeholder="Address">
+					</div>
+					<div class="flex-w w-size0 w-full-sm">
+						<div>
+							<span class="s-text19">
+								Apt/Unit (Option)
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="unit" placeholder="Apt/Unit">
+							</div>
+						</div>
+						<div class="p-l-20">
+							<span class="s-text19">
+								District
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="district" placeholder="District">
+							</div>
+						</div>
+					</div>
+					<div class="flex-w w-size0 w-full-sm">
+						<div>
+							<span class="s-text19">
+								City
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="city" placeholder="City">
+							</div>
+						</div>
+						<div class="p-l-20">
+							<span class="s-text19">
+								Postal Code
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="postcode" placeholder="Postal Code">
+							</div>
+						</div>
+					</div>
+					<div class="flex-w flex-sb-m">
+						<span class="s-text19 w-size19 w-full-sm">
+							Phone Number
+						</span>
+					</div>
+					<div class="size01 bo4 m-b-12 bgred">
+						<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="phone" placeholder="Phone Number">
+					</div>
+					<div class="flex-w flex-sb-m p-b-15 p-t-24">
+						<span class="s-text18 text-red w-size19 w-full-sm">
+							<span class="text-red">Verify Credit Card</span>
+						</span>
+					</div>
+					<div class="flex-w w-size0 w-full-sm">
+						<div>
+							<span class="s-text19">
+								First Name
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="" placeholder="Firstname">
+							</div>
+						</div>
+						<div class="p-l-20">
+							<span class="s-text19">
+								Last Name
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="" placeholder="Lastname">
+							</div>
+						</div>
+					</div>
+					<div class="flex-w flex-sb-m">
+						<span class="s-text19 w-size19 w-full-sm">
+							Card Number
+						</span>
+					</div>
+					<div class="size01 bo4 m-b-12">
+						<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="card" placeholder="Card Number">
+					</div>
+					<div class="flex-w w-size0 w-full-sm">
+						<div>
+							<span class="s-text19">
+								Expire Year
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="expire_year" placeholder="Ex 2018">
+							</div>
+						</div>
+						<div class="p-l-20">
+							<span class="s-text19">
+								Expire Month
+							</span>
+							<div class="size1 bo4 m-b-15">
+								<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="expire_month" placeholder="Ex 01">
+							</div>
+						</div>
+					</div>
+					<!-- <div class="flex-w flex-sb-m">
+						<span class="s-text19 w-size19 w-full-sm">
+							Expire Date
+						</span>
+					</div>
+					<div class="size01 bo4 m-b-12">
+						<span class="flex-c-m">
+							<input class="sizefull01 s-text7 p-l-15 p-r-15" type="text" name="expire_year" placeholder="Ex 2018">
+							<input class="sizefull01 s-text7 p-l-15 p-r-15" type="text" name="expire_month" placeholder="Ex 01">
+						</span>
+					</div> -->
+					<!-- <div class="flex-w flex-sb-m">
+						<span class="s-text19 w-size19 w-full-sm">
+							CSV
+						</span>
+					</div>
+					<div class="size02 bo4 m-b-12">
+						<input class="sizefull s-text7 p-l-15 p-r-15" type="text" name="csv" placeholder="Ex 123">
+					</div> -->
+					<div class="flex-w flex-sb-m p-t-12">
+						<span class="s-text18 text-red w-size19 w-full-sm">
+							<span class="text-red">Billing Information</span>
+						</span>
+					</div>
+					<div class="flex-w flex-sb-m">
+						<p class="s-text8">
+							Plans automatically renew. You can cancel anytime
+						</p>
+					</div>
+					<div class="flex-w flex-sb-m p-b-6">
+						<p class="s-text5 p-b-6">
+							<input type="checkbox" name="agree_flag"> agree to the terms of service and privacy policy.
+						</p>
+					</div>
+					<div class="dis-flex flex-c-m size15 trans-0-4">
+						<button class="check-btn size0 bg10 bo0 bo-rad-0 s-text1 trans-0-4">
+							Checkout
+						</button>
+					</div>
+					<div class="flex-w flex-sb-m p-t-12 p-b-15">
+						<span class="m-text22 w-size0 w-full-sm">
+							Your total is : <%= plan_value %> THB
+							<input type="hidden" name="price" id="price" value="<%= plan_value %>" />
+						</span>
+						<!-- <span class="m-text21 w-size20 w-full-sm">
+							<%# plan_value %> THB
+							<input type="hidden" name="price" id="price" value="<%# plan_value %>" />
+						</span> -->
+					</div>
+				</form>
+				<div class="flex-w flex-sb-m p-b-6">
+					<p class="s-text5 p-b-6">
+						By clicking "Checkout" you agree any subscriptions you purchase will automatically renew. You will continue to receive and be charged for renewed subscriptions of the same term purchased above until you cancel your auto-renewal. You may cancel the auto-renewal of your subscription at any time through your account page. Promotional pricing for subscriptions does not apply to any renewals.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

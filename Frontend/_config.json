@@ -1,0 +1,13 @@
+{
+  "db": {
+    "user": "root",
+    "password": "",
+    "host": "localhost",
+    "port": "3306",
+    "database": "codebox"
+  },
+  "omiseKey": {
+    "publicKey": "pkey_test_5di5sulqw22j2d84v1d",
+    "secretKey": "skey_test_5di5sulr698m9gg60t5"
+  }
+}

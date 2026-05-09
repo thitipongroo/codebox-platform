@@ -1,0 +1,19 @@
+<section class="thank-section bg9 p-t-100 p-b-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center bgwhite p-5">
+                <% if(status=='success'){ %>
+                    <i class="fa fa-check-circle fs-72 text-success" aria-hidden="true"></i>
+                    <h2 class="display-3 text-black">Thank you!</h2>
+                    <p class="lead m-b-5">You subscribtion was successfuly completed.</p>
+                    <a href="/" class="btn academy-btn btn-sm">Back to home</a>
+                <% }else if(status=='fail'){ %>
+                    <i class="fa fa-check-circle fs-72 text-fail" aria-hidden="true"></i>
+                    <h2 class="display-3 text-black">Sorry!</h2>
+                    <p class="lead m-b-5">You subscribtion was unsuccessfuly completed.</p>
+                    <a href="/" class="btn academy-btn btn-sm">Back to home</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,152 @@
+
+<% if (Object.keys(packageDetail).length !== 0) { %>
+<section class="head-course-details-area p-t-130 p-b-20 bg9">
+    <div class="container single-head-course">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <% let picture =  `<div class="single-head-thumb bg-img col-lg-12" style="background-image: url(../img/course/${packageDetail.package_picture}.jpg);"></div>` %>
+                <%- picture %>
+            </div>
+            <div class="col-12 col-lg-6 flex-m">
+                <div class="single-head-content">
+                    <h5><%= packageDetail.package_name %></h5>
+                    <span>Guided learning for ages 6-12</span>
+                    <p><%= packageDetail.package_description %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg10 p-t-20 p-b-20 overlay">
+    <div class="container">
+        <div class="row">
+        <% if (packageSubList) { %>
+        <% packageSubList.forEach((package) => { %>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="price-table">
+                <h3><%= package.sub_name %> Subscribtion</h3>
+                <ul class="list-unstyled">
+                    <li><strong class="amount">THB <span class="big"><%= package.plan_value %></span></strong>/Month.</li>
+                    <a href="/purchase?s=<%= package.sub_id %>&p=<%= package.package_id %>" class="btn academy-btn btn-sm">Purchase</a>
+                    <li>THB <%= package.plan_value %> billed monthly </li>
+                    <li>Free Shipping in THA</li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <%   }) %>
+        <% } %>
+        </div>
+    </div>
+</section>
+
+<section class="bg9 p-t-50 p-b-20 overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <h2><span class="text-red">All subscriptions renew automatically, but you can cancel any time.</span></h2>
+                    <p>What comes in the Basic Codebox?</p>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-4 bgwhite">
+                <div class="single-top-popular-course d-flex align-items-center flex-wrap">
+                    <div class="welcom-box-thumb bg-img" style="background-image: url(../img/course/ce-1.jpg);"></div>
+                </div>
+                <div class="section-heading text-center">
+                    <h2>Codebox Binder</h2>
+                </div>
+                <div class="section-heading">
+                    <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4 bgwhite">
+                <div class="single-top-popular-course d-flex align-items-center flex-wrap">
+                    <div class="welcom-box-thumb bg-img" style="background-image: url(../img/course/ce-2.jpg);"></div>
+                </div>
+                <div class="section-heading text-center">
+                    <h2>Codebox Supercards</h2>
+                </div>
+                <div class="section-heading">
+                    <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4 bgwhite">
+                <div class="single-top-popular-course d-flex align-items-center flex-wrap">
+                    <div class="welcom-box-thumb bg-img" style="background-image: url(../img/course/ce-3.jpg);"></div>
+                </div>
+                <div class="section-heading text-center">
+                    <h2>Real Code</h2>
+                </div>
+                <div class="section-heading">
+                    <p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg10 p-t-50 p-b-20 overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <h2>Basic Codebox Pricing</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="price-table">
+                    <h3>MONTHLY Subscribtion</h3>
+                    <ul class="list-unstyled">
+                        <li><strong class="amount">THB <span class="big">2000</span></strong>/Month.</li>
+                        <a href="/purchase" class="btn academy-btn btn-sm">Purchase</a>
+                        <li>THB 2000 billed monthly </li>
+                        <li>Free Shipping in THA.</li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="price-table">
+                    <h3>3 MONTHLY Subscribtion</h3>
+                    <ul class="list-unstyled">
+                        <li><strong class="amount">THB <span class="big">800</span></strong>/Month.</li>
+                        <a href="/purchase" class="btn academy-btn btn-sm">Purchase</a>
+                        <li>THB 800 billed monthly </li>
+                        <li>Free Shipping in THA.</li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="price-table">
+                    <h3>12 MONTHLY Subscribtion</h3>
+                    <ul class="list-unstyled">
+                        <li><strong class="amount">THB <span class="big">200</span></strong>/Month.</li>
+                        <a href="/purchase" class="btn academy-btn btn-sm">Purchase</a>
+                        <li>THB 200 billed monthly </li>
+                        <li>Free Shipping in THA.</li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <br><br>
+                    <h2 style="color:red;">All subscriptions renew automatically, but you can cancel any time.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<% } %>

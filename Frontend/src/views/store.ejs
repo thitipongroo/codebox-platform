@@ -1,0 +1,33 @@
+<!-- ##### Top Popular Courses Area Start ##### -->
+<section class="single-top-popular-course bg9 p-t-150 p-b-50" id=subscription>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading-course text-center mx-auto">
+                    <h4>Codebox is a crazyfun way for kids to learn <b>real coding.</b></h4><br>
+                    <h3>Condition</h3><br>
+                    <h4>Choose from three brilliant options</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+        <% packageDetailList.forEach(detail => { %>
+        <% let picture =  `<div class="popular-course-thumb bg-img" style="background-image: url(img/course/${detail.package_picture}.jpg);"></div>` %>
+        <% let detailId =  `<a href="/detail/${detail.package_id}" class="btn academy-btn btn-sm">More Info</a>` %>
+            <div class="col-12 col-lg-6">
+                <div class="single-top-popular-course d-flex align-items-center flex-wrap">
+                    <%- picture %>
+                    <div class="popular-course-content">
+                        <h5><%= detail.package_name %></h5>
+                        <span>From THB 200/Month.</span>
+                        <p class="fs-18"><%= detail.package_description %></p>
+                        <%- detailId %>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+        </div>
+    </div>
+</section>
+<!-- ##### Top Popular Courses Area End ##### -->

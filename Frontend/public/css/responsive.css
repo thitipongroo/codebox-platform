@@ -1,0 +1,355 @@
+/* -------------------------------------------------
+:: @media (min-width: 320px) and (max-width: 767px)
+:: @media (min-width: 480px) and (max-width: 767px)
+:: @media (min-width: 576px) and (max-width: 767px)
+:: @media (min-width: 768px) and (max-width: 991px)
+:: @media (min-width: 992px) and (max-width: 1199px)
+-------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menu_area .navbar-brand {
+        font-size: 42px;
+    }
+    .menu_area #nav .nav-link {
+        padding: 35px 7.5px;
+    }
+    .get-start-area a.submit-home {
+        margin-top: 0px;
+        margin-left: 80px;
+    }
+    .sing-up-button > a {
+        color: #fff;
+        height: 40px;
+        min-width: 74px;
+        line-height: 36px;
+        font-size: 14px;
+        border-radius: 20px 20px 20px 0px;
+    }
+    .wellcome-heading {
+        margin-bottom: 35px;
+        margin-left: 50px;
+    }
+    .wellcome-heading >h3 {
+        margin-left: +250px;
+    }
+    /* .get-start-area .email {
+        width: 67%;
+    } */
+    .get-start-area .email {
+        max-width: 300px;
+    }
+    .get-start-area .submit {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .get-start-area .submit-schools {
+        margin-top: 25px;
+        margin-left: 80px;
+    }
+    .submit-stu {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .video-area {
+        height: 550px;
+    }
+    .header_area.sticky .menu_area #nav .nav-link {
+        padding: 23px 7.5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .login {
+        margin: auto;
+    }
+    .header_area {
+        padding: 0;
+    }
+    .menu_area .navbar-brand {
+        font-size: 48px;
+    }
+    .header_area.sticky {
+        height: 50px;
+    }
+    .header_area .menu_area #nav .nav-link,
+    .header_area.sticky .menu_area #nav .nav-link {
+        padding: 7.5px 15px;
+    }
+    #menu-navbar {
+        padding: 30px;
+        background-color: #ffc300;
+        text-align: left;
+        border-radius: 28px 28px 28px 0px;
+    }
+    /* .get-start-area .email {
+        width: 60%;
+    } */
+    .get-start-area .email {
+        max-width: 300px;
+    }
+    .get-start-area form input[type=submit].submit {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .get-start-area .submit {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .get-start-area .submit-home {
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .get-start-area .submit-schools {
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .get-start-area form input[type=submit] .submit {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .submit-stu {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .wellcome-heading {
+        margin-bottom: 35px;
+        margin-left: -40px;
+    }
+    .wellcome-heading >h2 {
+        margin-left: 40px;
+    }
+    .wellcome-heading >h3 {
+        margin-left: 200px;
+    }
+    .wellcome-heading >p {
+        margin-left: 40px;
+    }
+    .single-special {
+        padding: 30px 10px;
+    }
+    .video-area {
+        height: 350px;
+    }
+    .section-heading > h2 {
+        font-size: 38px;
+    }
+    .section-heading {
+        margin-bottom: 50px;
+    }
+    .sing-up-button {
+        margin-top: 5px;
+        text-align: left;
+    }
+    .sing-up-button > a {
+        border-color: #4caf50;
+        width: 130px;
+    }
+    .sing-up-button > a:hover {
+        background-color: #4caf50;
+    }
+    .single-top-popular-course.p-t-150 {
+        padding-top: 100px;
+    }
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .login {
+        margin: auto;
+    }
+    .header_area {
+        padding: 0;
+        top:0;
+    }
+    .header_area.sticky .menu_area .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .menu_area .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .header_area.sticky {
+        height: 50px;
+    }
+    .header_area .menu_area #nav .nav-link,
+    .header_area.sticky .menu_area #nav .nav-link {
+        padding: 5px 15px;
+    }
+    #menu-navbar {
+        padding: 20px;
+        border-radius: 28px 28px 28px 0px;
+        background-color: #ffc300;
+        text-align: left;
+    }
+    .sing-up-button {
+        margin-top: 5px;
+        text-align: left;
+    }
+    .sing-up-button > a {
+        border-color: #4caf50;
+        width: 130px;
+    }
+    .sing-up-button > a:hover {
+        background-color: #4caf50
+    }
+    .wellcome_area {
+        height: 550px;
+    }
+    .wellcome-heading {
+        margin-bottom: 40px;
+        margin-left: 0px;
+    }
+    .wellcome-heading > h2 {
+        font-size: 40px;
+    }
+    .wellcome-heading > h3 {
+        font-size: 252px;
+        top: -105px;
+        left: -1px;
+    }
+    .get-start-area .submit {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .get-start-area .submit-schools {
+        margin-top: 35px;
+    }
+    .submit-stu {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .head-course-details-area {
+        padding-top: 80px;
+    }
+    .section-heading > h2 {
+        font-size: 32px;
+    }
+    .single-special {
+        margin-bottom: 30px;
+    }
+    .video-area {
+        border: 10px solid #fff;
+        border-radius: 20px;
+        height: 250px;
+    }
+    .video-area::after {
+        top: -10px;
+        left: -10px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        border: 1px solid #f1f4f8;
+        z-index: 2;
+        border-radius: 20px;
+    }
+    .membership-description > h2 {
+        font-size: 32px;
+    }
+    .cool_facts_area .col-12:last-of-type .single-cool-fact {
+        margin-bottom: 0;
+    }
+    .single-top-popular-course.p-t-150 {
+        padding-top: 80px;
+    }
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+    .wrap-login {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .login {
+        margin: auto;
+    }
+    .wellcome-heading {
+        margin-bottom: -150px;
+        margin-left: 0px;
+    }
+    .wellcome-heading > h2 {
+        font-size: 70px;
+    }
+    .wellcome-heading > h3 {
+        font-size: 248px;
+        top: -105px;
+        left: 5px;
+    }
+    /* .get-start-area {
+        margin-top: 150px;
+    } */
+    .get-start-area .submit {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .get-start-area .submit-home {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .get-start-area .submit-schools {
+        margin-top: 170px;
+        margin-left: 10px;
+    }
+    .get-start-area .email {
+        max-width: 245px;
+    }
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+    .wrap-login {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .login {
+        margin: auto;
+    }
+    .wellcome-heading > h3 {
+        font-size: 286px;
+        padding-left: -10px;
+    }
+    .get-start-area .email {
+        width: 100%;
+    }
+    .get-start-area .submit-home {
+        margin-top: 190px;
+        margin-left: 20px;
+    }
+    .get-start-area .submit-schools {
+        margin-top: 210px;
+        margin-left: 20px;
+    }
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .wellcome-heading {
+        margin-bottom: 35px;
+        margin-left: 50px;
+    }
+    .wellcome-heading >h3 {
+        margin-left: +250px;
+    }
+    .get-start-area .submit {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .get-start-area .email {
+        max-width: 270px;
+    }
+    .sing-up-button > a {
+        min-width: 90px;
+    }
+    .get-start-area .submit-home {
+        margin-top: 0px;
+        margin-left: 80px;
+    }
+}
