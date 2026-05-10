@@ -1,0 +1,6 @@
+export const keyData = (name, val) => ({ type: 'keyInput', val, name })
+export const createUserAuth = (user) => ({ type: 'updateUser', val: user })
+export const customerList = (cus) => ({ type: 'customerList', val: [...cus] })
+export const customerDetail = (cus) => ({ type: 'customerDetail', val: cus })
+export const removeList = () => ({ type: 'removeList' })
+export const resetProp = () => ({ type: 'resetProp' })

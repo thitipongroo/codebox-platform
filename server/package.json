@@ -1,0 +1,22 @@
+{
+  "name": "codebox-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.0",
+    "koa": "^2.5.3",
+    "koa-body": "^4.0.4",
+    "koa-ejs": "^4.1.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "mysql2": "^1.6.1",
+    "omise": "^0.5.4"
+  }
+}
